@@ -1,6 +1,4 @@
-// ─────────────────────────────────────────────────────────────
-//  Edit everything about your portfolio from this one file.
-// ─────────────────────────────────────────────────────────────
+// all the content of the site is here
 
 export const profile = {
   name: 'Vikash Kumar Yadav',
@@ -16,7 +14,7 @@ export const profile = {
   statusText: 'Open to internships',
   tagline:
     'B.Tech student at Government Engineering College, Jamui, building full stack web apps with React, Node.js, Express and MongoDB — and looking for my first internship.',
-  // TODO: put your CV in public/resume.pdf and change this to '/resume.pdf'
+  // TODO add resume.pdf in public/
   resumeUrl: '#',
   socials: [
     { label: 'GitHub', href: 'https://github.com/Guava99', icon: 'github' },
@@ -34,7 +32,7 @@ export const navLinks = [
   { id: 'contact', label: 'Contact' },
 ]
 
-// Numeric values count up on scroll; text values are shown as-is.
+// numbers count up, text is shown as it is
 export const stats = [
   { value: 10, suffix: '', label: 'Technologies in my toolkit' },
   { value: 2027, suffix: '', label: 'Graduating batch' },
@@ -90,8 +88,7 @@ export const techStack = [
   'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'SQL', 'MongoDB', 'Git', 'GitHub',
 ]
 
-// TODO: add your own projects here — copy an entry and change the fields.
-// `gradient` colours the generated preview; `featured: true` makes the card wider.
+// featured: true makes the card wider
 export const projects = [
   {
     title: 'Shoplex',
@@ -119,7 +116,7 @@ export const projects = [
   },
 ]
 
-// Journey timeline, oldest first. `current: true` highlights the step you're on now.
+// oldest first
 export const experience = [
   {
     year: '2023',

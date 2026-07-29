@@ -8,7 +8,7 @@ import { profile, projects } from '../../data/portfolio'
 const ease = [0.22, 1, 0.36, 1]
 const githubUrl = profile.socials.find((s) => s.icon === 'github')?.href ?? '#'
 
-// "All", "Featured", then every technology used by 2+ projects (max 3).
+// filter tabs
 function useFilters() {
   return useMemo(() => {
     const counts = {}

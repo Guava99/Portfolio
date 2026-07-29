@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-// The SVG-refraction variant of the glass only renders correctly in Chromium;
-// Safari & Firefox keep the regular frosted blur.
+// svg filter in backdrop-filter only works in chrome
 const isChromium = navigator.userAgentData?.brands?.some((b) => /Chromium/i.test(b.brand))
 if (isChromium) document.documentElement.classList.add('lg-distort')
 

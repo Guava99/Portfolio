@@ -1,8 +1,4 @@
-/**
- * SVG displacement filters used by `.lg--liquid` / `.lg--live` as a
- * backdrop-filter. Only applied in Chromium (see main.jsx) — other
- * browsers fall back to the plain frosted blur.
- */
+// svg filters for the liquid glass effect, only works in chrome
 export default function GlassFilters() {
   return (
     <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true" focusable="false">

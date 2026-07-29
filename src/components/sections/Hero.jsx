@@ -9,7 +9,7 @@ import { scrollToId } from '../../lib/scroll'
 
 const ease = [0.22, 1, 0.36, 1]
 
-// Each line is a list of [tokenClass, text] pairs.
+// [class, text]
 const code = [
   [['tok-c', '// learning by building']],
   [['tok-k', 'const '], ['', 'developer'], ['tok-p', ' = '], ['tok-p', '{']],

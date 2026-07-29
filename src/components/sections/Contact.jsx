@@ -55,8 +55,7 @@ export default function Contact() {
     }
   }
 
-  // Frontend only: opens the visitor's mail client with the message pre-filled.
-  // Swap this for Formspree / EmailJS / your own API when you add a backend.
+  // no backend for this yet, just opens the mail app
   const submit = (e) => {
     e.preventDefault()
     const subject = encodeURIComponent(`${topic} — message from ${form.name}`)

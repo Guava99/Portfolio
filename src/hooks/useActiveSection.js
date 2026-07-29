@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-/** Returns the id of the section currently crossing the middle of the viewport. */
+// which section is in the middle of the screen right now
 export default function useActiveSection(ids) {
   const [active, setActive] = useState(ids[0])
 

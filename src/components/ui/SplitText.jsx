@@ -9,10 +9,7 @@ const wordVariants = {
   }),
 }
 
-/**
- * Masked word-by-word reveal. Plays when scrolled into view,
- * or when `play` flips to true if it is provided.
- */
+// reveals text word by word when it comes into view (or when play is true)
 export default function SplitText({ text, as = 'span', className = '', delay = 0, stagger = 0.06, play }) {
   const Tag = motion[as]
   const words = text.split(' ')

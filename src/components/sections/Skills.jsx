@@ -6,8 +6,7 @@ import { skillGroups, techStack } from '../../data/portfolio'
 
 const ease = [0.22, 1, 0.36, 1]
 
-// Short label for each skill's coloured badge. Unknown skills fall back to
-// their acronym ("SQL") or first two letters.
+// short names for the badges
 const MARKS = {
   JavaScript: 'JS',
   React: 'Re',

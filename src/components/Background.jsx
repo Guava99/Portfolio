@@ -18,7 +18,6 @@ function Blob({ cls, depth, mx, my }) {
   )
 }
 
-/** Fixed animated aurora background that the glass surfaces refract. */
 export default function Background() {
   const rawX = useMotionValue(0)
   const rawY = useMotionValue(0)

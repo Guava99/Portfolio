@@ -3,7 +3,6 @@ import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 const INTERACTIVE = 'a, button, input, textarea, [data-cursor]'
 
-/** Dot + trailing ring cursor. Grows over interactive elements and can show a label via data-cursor="Label". */
 export default function Cursor() {
   const x = useMotionValue(-100)
   const y = useMotionValue(-100)

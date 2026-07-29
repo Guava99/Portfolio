@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 
-/** Wraps children so they get pulled toward the cursor while hovered. */
+// moves the child a little towards the mouse on hover
 export default function Magnetic({ children, strength = 0.35, className = '', style }) {
   const ref = useRef(null)
   const x = useMotionValue(0)

@@ -4,14 +4,8 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
 const cache = {}
 const getMotion = (tag) => (cache[tag] ??= motion.create(tag))
 
-/**
- * Liquid glass surface.
- *  - `liquid`   refracts the backdrop through an SVG displacement map (Chromium)
- *  - `live`     same, with an animated (wobbling) displacement map
- *  - `tilt`     3D tilt that follows the cursor (number = max degrees)
- *  - `spotlight` soft light that follows the cursor
- * Any other props (including Framer Motion props) are forwarded.
- */
+// liquid - svg distortion (only chrome), live - same but animated
+// tilt - max tilt in degrees, spotlight - light that follows the mouse
 const Glass = forwardRef(function Glass(
   {
     as = 'div',

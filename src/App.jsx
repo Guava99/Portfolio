@@ -22,7 +22,7 @@ export default function App() {
   const [loading, setLoading] = useState(true)
   const finishLoading = useCallback(() => setLoading(false), [])
 
-  // buttery smooth scrolling
+  // smooth scroll
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (reduce) return

@@ -1,4 +1,4 @@
-/* ───────────────────────── Tokens ───────────────────────── */
+/* tokens */
 :root {
   --bg: #07060f;
   --bg-2: #0d0b1d;
@@ -30,7 +30,7 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* ───────────────────────── Base ───────────────────────── */
+/* base */
 *,
 *::before,
 *::after {
@@ -46,7 +46,7 @@ html {
   overflow-x: clip;
 }
 
-/* no body background: it would paint over the fixed z-index:-1 aurora layer */
+/* dont set body bg here, it hides the background blobs */
 body {
   color: var(--text);
   font-family: var(--font-body);
@@ -147,10 +147,9 @@ svg {
   white-space: nowrap;
 }
 
-/* ───────────────────── Liquid glass material ─────────────────────
-   Backdrop blur + saturation, specular inner highlights, a gradient
-   rim and a cursor-tracking spotlight. In Chromium the `.lg--liquid`
-   variant also refracts the backdrop through an SVG displacement map. */
+/* glass
+   blur + inner highlights + gradient border + spotlight on hover.
+   .lg--liquid also uses the svg filter (chrome only) */
 .lg {
   --blur: 18px;
   position: relative;
@@ -218,7 +217,7 @@ html.lg-distort .lg--live {
   backdrop-filter: url(#lg-distort-live) blur(2px) saturate(200%) brightness(1.1);
 }
 
-/* ───────────────────────── Background ───────────────────────── */
+/* background */
 .bg {
   position: fixed;
   inset: 0;
@@ -328,7 +327,7 @@ html.lg-distort .lg--live {
   100% { transform: translate(0, 0); }
 }
 
-/* ───────────────────────── Loader ───────────────────────── */
+/* loader */
 .loader {
   position: fixed;
   inset: 0;
@@ -398,7 +397,7 @@ html.lg-distort .lg--live {
   }
 }
 
-/* ───────────────────────── Cursor ───────────────────────── */
+/* cursor */
 .cursor {
   position: fixed;
   top: 0;
@@ -469,7 +468,7 @@ html.lg-distort .lg--live {
   }
 }
 
-/* ───────────────────────── Scroll progress ───────────────────────── */
+/* scroll progress */
 .progress {
   position: fixed;
   top: 0;
@@ -482,7 +481,7 @@ html.lg-distort .lg--live {
   box-shadow: 0 0 12px rgba(139, 92, 246, 0.8);
 }
 
-/* ───────────────────────── Navbar ───────────────────────── */
+/* navbar */
 .nav {
   position: fixed;
   top: 18px;
@@ -629,7 +628,7 @@ html.lg-distort .lg--live {
   gap: 12px;
 }
 
-/* ───────────────────────── Buttons ───────────────────────── */
+/* buttons */
 .magnetic {
   display: inline-flex;
 }
@@ -697,7 +696,7 @@ html.lg-distort .lg--live {
   color: var(--text);
 }
 
-/* ───────────────────────── Section heading ───────────────────────── */
+/* section heading */
 .heading {
   margin-bottom: clamp(44px, 6vw, 72px);
   max-width: 760px;
@@ -770,7 +769,7 @@ html.lg-distort .lg--live {
   will-change: transform;
 }
 
-/* ───────────────────────── Hero ───────────────────────── */
+/* hero */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -1114,7 +1113,7 @@ html.lg-distort .lg--live {
   100% { transform: translateY(0); opacity: 0; }
 }
 
-/* ───────────────────────── About ───────────────────────── */
+/* about */
 .about__grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -1323,7 +1322,7 @@ html.lg-distort .lg--live {
   font-size: 14.5px;
 }
 
-/* ───────────────────────── Skills ───────────────────────── */
+/* skills */
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1516,7 +1515,7 @@ html.lg-distort .lg--live {
   }
 }
 
-/* ───────────────────────── Projects ───────────────────────── */
+/* projects */
 .filters {
   display: inline-flex;
   flex-wrap: wrap;
@@ -1800,7 +1799,7 @@ html.lg-distort .lg--live {
   font-size: 15px;
 }
 
-/* ───────────────────────── Experience ───────────────────────── */
+/* experience */
 .timeline {
   position: relative;
   max-width: 1000px;
@@ -1987,7 +1986,7 @@ html.lg-distort .lg--live {
   margin-bottom: 14px;
 }
 
-/* ───────────────────────── Contact ───────────────────────── */
+/* contact */
 .contact__grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -2191,7 +2190,7 @@ html.lg-distort .lg--live {
   color: #0b0a18;
 }
 
-/* ───────────────────────── Footer ───────────────────────── */
+/* footer */
 .footer {
   position: relative;
   padding: 40px 0 36px;
@@ -2207,7 +2206,7 @@ html.lg-distort .lg--live {
   text-align: center;
   white-space: nowrap;
   color: transparent;
-  /* gradient layer grows with scroll over a faint base layer */
+  /* fills with gradient on scroll */
   background-image: var(--grad), linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07));
   background-size: 0% 100%, 100% 100%;
   background-repeat: no-repeat;
@@ -2243,7 +2242,7 @@ html.lg-distort .lg--live {
   color: var(--text);
 }
 
-/* ───────────────────────── Responsive ───────────────────────── */
+/* responsive */
 @media (max-width: 1024px) {
   .hero__grid {
     grid-template-columns: 1fr;
