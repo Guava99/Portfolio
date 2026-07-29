@@ -18,10 +18,9 @@ export const profile = {
     'B.Tech student at Government Engineering College, Jamui, building full stack web apps with React, Node.js, Express and MongoDB — and looking for my first internship.',
   // TODO: put your CV in public/resume.pdf and change this to '/resume.pdf'
   resumeUrl: '#',
-  // TODO: replace with your real profile URLs
   socials: [
     { label: 'GitHub', href: 'https://github.com/Guava99', icon: 'github' },
-    { label: 'LinkedIn', href: 'https://linkedin.com/', icon: 'linkedin' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/vikash-kumar-yadav-406725306/', icon: 'linkedin' },
     { label: 'Email', href: 'mailto:vky172003@gmail.com', icon: 'mail' },
   ],
 }
@@ -95,15 +94,27 @@ export const techStack = [
 // `gradient` colours the generated preview; `featured: true` makes the card wider.
 export const projects = [
   {
-    title: 'Liquid Glass Portfolio',
-    category: 'Personal · Frontend',
+    title: 'Shoplex',
+    category: 'Personal · MERN',
     year: '2026',
     description:
-      'This website — a React portfolio with a liquid glassmorphism UI, smooth scrolling and scroll-driven animations, deployed on Vercel.',
-    tech: ['React', 'Vite', 'Framer Motion', 'CSS'],
+      'E-commerce app where you can browse products, add them to the cart and place orders. Has JWT login and an admin panel to add products and manage orders.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Prisma', 'JWT'],
     gradient: ['#8b5cf6', '#22d3ee'],
-    live: '#',
-    code: '#',
+    live: 'https://shoplex-frontend.onrender.com/',
+    code: 'https://github.com/Guava99/shoplex',
+    featured: true,
+  },
+  {
+    title: 'Intelligence Platform',
+    category: 'Personal · MERN · AI',
+    year: '2026',
+    description:
+      'Interview and coding practice platform. Mock interviews with questions from Gemini, a practice section with the Monaco editor that runs your code against test cases, and AI feedback on your code.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Gemini API', 'Monaco Editor'],
+    gradient: ['#f472b6', '#fb923c'],
+    live: 'https://intelligence-platform-ochre.vercel.app/',
+    code: 'https://github.com/Guava99/IntelligencePlatform',
     featured: true,
   },
 ]
@@ -113,7 +124,7 @@ export const experience = [
   {
     year: '2023',
     label: 'The beginning',
-    title: 'Joined Government Engineering College, Jamui',
+    title: 'Joined Government Engineering College, Jamui, Bihar',
     subtitle: 'B.Tech · Batch 2023 — 2027',
     description:
       'Started my engineering journey and got my first real taste of programming and computer science fundamentals.',
