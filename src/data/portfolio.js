@@ -9,11 +9,11 @@ export const profile = {
   email: 'vky172003@gmail.com',
   college: 'Government Engineering College, Jamui',
   collegeShort: 'GEC Jamui',
-  batch: '2023 — 2027',
+  batch: '2023 - 2027',
   available: true,
   statusText: 'Open to internships',
   tagline:
-    'B.Tech student at Government Engineering College, Jamui, building full stack web apps with React, Node.js, Express and MongoDB — and looking for my first internship.',
+    'B.Tech student at Government Engineering College, Jamui, building full stack web apps with React, Node.js, Express and MongoDB. Looking for my first internship.',
   // TODO add resume.pdf in public/
   resumeUrl: '#',
   socials: [
@@ -43,8 +43,8 @@ export const stats = [
 export const about = {
   heading: 'Turning ideas into working web apps, one commit at a time.',
   paragraphs: [
-    'I’m Vikash, a B.Tech student at Government Engineering College, Jamui (batch 2023–2027) and an aspiring full stack developer. I enjoy building things end to end — responsive interfaces in React, REST APIs with Node.js and Express, and data stored in MongoDB or SQL.',
-    'Right now I’m looking for an internship where I can contribute to real products, learn from experienced engineers and grow as a developer. I’m eager to learn, comfortable working with Git and GitHub, and I love seeing an idea go live.',
+    "I'm Vikash, a B.Tech student at Government Engineering College, Jamui (batch 2023-2027). I like building things end to end, the frontend in React, APIs with Node.js and Express, and the database in MongoDB or SQL.",
+    "Right now I'm looking for an internship where I can work on real projects and learn from experienced developers. I'm comfortable with Git and GitHub and I really enjoy seeing something I built go live.",
   ],
   highlights: [
     { title: 'Frontend', text: 'HTML, CSS, JavaScript and React.' },
@@ -122,7 +122,7 @@ export const experience = [
     year: '2023',
     label: 'The beginning',
     title: 'Joined Government Engineering College, Jamui, Bihar',
-    subtitle: 'B.Tech · Batch 2023 — 2027',
+    subtitle: 'B.Tech · Batch 2023 - 2027',
     description:
       'Started my engineering journey and got my first real taste of programming and computer science fundamentals.',
     tags: ['B.Tech', 'CS Fundamentals', 'Programming'],
@@ -134,7 +134,7 @@ export const experience = [
     title: 'Started my web development journey',
     subtitle: 'From HTML to full stack',
     description:
-      'Began building for the web with HTML, CSS and JavaScript — then kept going: React on the frontend, Node.js and Express on the backend, SQL and MongoDB for data, and Git & GitHub for everything.',
+      'Began building for the web with HTML, CSS and JavaScript, then moved on to React on the frontend, Node.js and Express on the backend, SQL and MongoDB for data, and Git & GitHub for everything.',
     tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB'],
     icon: 'code',
   },
@@ -144,13 +144,13 @@ export const experience = [
     title: 'Practising Machine Learning',
     subtitle: 'Exploring beyond the web',
     description:
-      'Started practising machine learning — learning the core concepts and experimenting with models to understand how data-driven applications work.',
+      'Started practising machine learning, learning the basics and trying out different models.',
     tags: ['Machine Learning', 'Data', 'Practice'],
     icon: 'sparkle',
   },
   {
     year: '2026',
-    label: 'What’s next',
+    label: "What's next",
     title: 'Looking for an internship',
     subtitle: 'Full stack · Frontend · Backend',
     description:
@@ -164,6 +164,6 @@ export const experience = [
 export const services = [
   { title: 'Responsive Websites', text: 'Clean, mobile-friendly pages with semantic HTML, modern CSS and JavaScript.', icon: 'layers' },
   { title: 'React Frontends', text: 'Component-based interfaces with state, routing and smooth interactions.', icon: 'sparkle' },
-  { title: 'REST APIs', text: 'Backend services with Node.js and Express — routes, validation and auth.', icon: 'server' },
+  { title: 'REST APIs', text: 'Backend services with Node.js and Express with routes, validation and auth.', icon: 'server' },
   { title: 'Databases', text: 'Data modelling and queries with MongoDB and SQL.', icon: 'database' },
 ]

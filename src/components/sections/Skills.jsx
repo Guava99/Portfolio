@@ -58,7 +58,7 @@ export default function Skills() {
           index="02"
           eyebrow="Skills"
           title="My toolkit."
-          sub="The technologies I use to build full stack web apps — from the first pixel to the database."
+          sub="The technologies I use to build full stack web apps, from frontend to database."
         />
 
         <div className="skills__grid">

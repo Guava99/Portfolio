@@ -16,12 +16,12 @@ export default function Footer() {
     <footer className="footer" ref={ref}>
       <div className="container">
         <motion.div className="footer__big" style={{ backgroundSize: fill, x }} aria-hidden="true">
-          Let’s talk.
+          Let's talk.
         </motion.div>
 
         <Glass className="footer__bar" spotlight={false}>
           <span>
-            © {new Date().getFullYear()} {profile.name}. Crafted with React & a lot of glass.
+            © {new Date().getFullYear()} {profile.name}. Made with React.
           </span>
           <nav className="footer__links" aria-label="Footer">
             {navLinks.slice(1, 5).map((l) => (

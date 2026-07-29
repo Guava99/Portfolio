@@ -58,7 +58,7 @@ export default function Contact() {
   // no backend for this yet, just opens the mail app
   const submit = (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`${topic} — message from ${form.name}`)
+    const subject = encodeURIComponent(`${topic} - message from ${form.name}`)
     const body = encodeURIComponent(
       `${form.message}\n\nFrom: ${form.name} <${form.email}>`,
     )
@@ -80,11 +80,11 @@ export default function Contact() {
             transition={{ duration: 0.7, ease }}
           >
             <span className="eyebrow__dot" />
-            05 — Contact
+            05 / Contact
           </Glass>
 
           <h2 className="contact__title">
-            <SplitText text="Let’s build something" />{' '}
+            <SplitText text="Let's build something" />{' '}
             <SplitText text="remarkable." className="split--grad" delay={0.2} />
           </h2>
 
@@ -95,7 +95,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease, delay: 0.3 }}
           >
-            Hiring interns, have a project in mind or just want to connect? I’m actively looking for
+            Hiring interns, have a project in mind or just want to connect? I'm actively looking for
             internship opportunities and would love to hear from you.
           </motion.p>
 
@@ -194,7 +194,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <span className="form__label">I’m reaching out about</span>
+          <span className="form__label">I'm reaching out about</span>
           <div className="budget" role="radiogroup" aria-label="Reason for reaching out">
             {topics.map((b) => (
               <motion.button

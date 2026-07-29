@@ -14,7 +14,7 @@ export default function SectionHeading({ index, eyebrow, title, sub, center = fa
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
         <span className="eyebrow__dot" />
-        {index} — {eyebrow}
+        {index} / {eyebrow}
       </Glass>
       <h2 className="heading__title">
         <SplitText text={title} />

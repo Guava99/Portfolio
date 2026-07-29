@@ -169,7 +169,7 @@ export default function Hero({ ready }) {
           </Glass>
 
           <motion.p className="hero__hello mono" {...show(0.2)}>
-            {'<hello world />'} I’m
+            {'<hello world />'} I'm
           </motion.p>
 
           <h1 className="hero__title">
@@ -177,7 +177,7 @@ export default function Hero({ ready }) {
           </h1>
 
           <motion.div className="hero__role" {...show(0.55)}>
-            <span className="hero__role-prefix">I’m a</span>
+            <span className="hero__role-prefix">I'm a</span>
             <RoleRotator play={ready} />
           </motion.div>
 

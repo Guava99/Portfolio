@@ -41,7 +41,7 @@ export default function Loader({ onDone }) {
         <div className="loader__bar">
           <motion.span style={{ scaleX: count / 100 }} />
         </div>
-        <span className="loader__label">Crafting experience</span>
+        <span className="loader__label">Loading</span>
       </Glass>
     </motion.div>
   )

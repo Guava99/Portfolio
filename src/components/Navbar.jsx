@@ -68,7 +68,7 @@ export default function Navbar({ ready }) {
 
           <Magnetic className="nav__cta">
             <button className="btn btn--primary btn--sm" onClick={() => go('contact')}>
-              Let’s talk
+              Let's talk
             </button>
           </Magnetic>
 

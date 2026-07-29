@@ -79,8 +79,8 @@ export default function Projects() {
         <SectionHeading
           index="03"
           eyebrow="Selected work"
-          title="Things I’ve built."
-          sub="Projects I’ve designed and developed while learning — with more on the way."
+          title="Things I've built."
+          sub="Projects I've made while learning. More coming soon."
         />
 
         {projects.length >= 3 && (
@@ -180,7 +180,7 @@ export default function Projects() {
                 <br />
                 <span className="grad-text">more work?</span>
               </h3>
-              <p>Practice projects, experiments and everything I’m currently building live on my GitHub.</p>
+              <p>Practice projects, experiments and everything I'm currently building live on my GitHub.</p>
               <span className="project-more__cta">
                 Browse GitHub <Icon name="arrowUpRight" size={16} />
               </span>

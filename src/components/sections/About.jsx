@@ -53,7 +53,7 @@ export default function About() {
           index="01"
           eyebrow="About me"
           title="A student developer who loves to build."
-          sub="Engineering student by day, full stack builder by night — learning by shipping real projects."
+          sub="Engineering student by day, full stack developer by night. I learn by building projects."
         />
 
         <div className="about__grid">

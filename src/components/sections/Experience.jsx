@@ -21,7 +21,7 @@ export default function Experience() {
           index="04"
           eyebrow="Journey"
           title="My journey so far."
-          sub="From my first day of college to building full stack apps — and what comes next."
+          sub="From my first day of college to building full stack apps, and what comes next."
           center
         />
 
@@ -85,7 +85,7 @@ export default function Experience() {
                   {item.current && (
                     <Magnetic className="tl-card__cta" strength={0.3}>
                       <button className="btn btn--primary btn--sm" onClick={() => scrollToId('contact')}>
-                        Let’s talk
+                        Let's talk
                         <span className="btn__icon">
                           <Icon name="arrowUpRight" size={16} />
                         </span>
